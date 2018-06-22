@@ -17,6 +17,26 @@ body{
     padding-bottom: 50%;
 }
 
+p{
+
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 1em;
+    /*background-color: #fff;*/
+    background:rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    position: relative;
+
+    margin-top: 5%;
+}
+
+p b{
+    background-color: white;
+}
+
 
 html{
     background-image: url("./background.jpg");
