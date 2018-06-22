@@ -1,0 +1,48 @@
+<html>
+    <header>
+        <app-topnav class="topnav" *ngFor = "let page of pages" [page]="pages.page" [name]="page.name"></app-topnav>
+        <img src="./logo.jpg" width="200" height="80"/>
+    </header>
+    <body>
+        <h1>Your Reservation</h1>
+        <div class="container">
+          <h2>You made a flight reservation from {{d_airport}} to {{a_airport}}. </h2>
+          <hr>
+          <div class="inner_card">
+            <table>
+              <b>
+                <tr>
+                  <td><b>Departure date</b></td>
+                  <td><b>{{date}}</b></td>
+                </tr>
+                <tr>
+                  <td><b>Flight Class</b></td>
+                  <td><b>{{class}}</b></td>
+                </tr>
+              </b>
+            </table>
+            <h2>Total Passengers</h2>
+            <hr>
+            <table>
+                <tr>
+                  <td><b>Total Adults</b> (Age 12+)</td>
+                  <td><b>{{num_adults}}</b></td>
+                </tr>
+                <tr>
+                  <td><b>Total Children</b> (Age 2-11)</td>
+                  <td><b>{{num_child}}</b></td>
+                </tr>
+                <tr>
+                  <td><b>Total Infants</b> (Age 0-1), on lap</td>
+                  <td><b>{{num_infants}}</b></td>
+                </tr>
+          </table>
+            <hr>
+            <h2>Total Costs : R 1 371.00</h2>
+          </div>
+        </div>
+    </body>
+    <footer>
+      <app-footer></app-footer>
+    </footer>
+</html>

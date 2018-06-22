@@ -1,0 +1,92 @@
+header{
+    background-color: skyblue;
+    align-content: right;
+    max-width: 1200px;
+    margin: 0 auto;
+} 
+
+header .topnav{
+    float: lefts;
+}
+
+header img{
+    float: left;
+}
+body{
+    padding-bottom: 50%;
+}
+
+.container{
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 1em;
+    /*background-color: #fff;*/
+    background:rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    position: relative;
+}
+
+html{
+    background-image: url("./background.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: 100%;
+}
+
+.card{
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 50px;
+    align-items: stretch
+}
+
+.container .card .c_time, .c_depart, .c_return{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #fff;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.container .card_time, .promo_time,.promo_depart, .promo_return{
+    padding: 1em;
+    
+    background-size: 10%;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    position: relative;
+}
+
+
+
+.container h1, p{
+    text-align: center;
+}
+
+.airport{
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 1em;
+    /*background-color: #fff;*/
+    background:rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    position: relative;
+}
+
+footer{
+    text-align: center;
+    background-color: grey;
+    height: 50px;
+    bottom: 0px;
+    width: 100%;
+    position: fixed;
+    vertical-align: middle;
+    line-height: normal;
+    padding: 0px;
+}

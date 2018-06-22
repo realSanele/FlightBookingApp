@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    background-image: url("https://www.google.co.za/search?q=flights&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi85r_r7ebbAhVHB8AKHS9NA4cQ_AUICigB&biw=1920&bih=959#imgrc=3XXFtzSQYm1PPM:");
+    background-size: cover;
+}

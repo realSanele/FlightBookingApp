@@ -1,0 +1,25 @@
+<html>
+  <header>
+    <app-topnav class="topnav" *ngFor = "let page of pages" [page]="pages.page" [name]="page.name"></app-topnav>
+    <img src="./logo.jpg" width="200" height="80"/>
+  </header>
+
+  <body>
+    <h1>Give Us Your Feedback</h1>
+    <div class="form">
+      <label><b>Name</b></label><br>
+      <input type="text"/><br>
+      <label class="email"><b>Email</b></label><br>
+      <input type="email"/><br>
+      <label><b>Message</b></label><br>
+      <textarea></textarea><br>
+      <input type="submit" value="Submit"/>
+    </div>
+    <h2>General enquiries</h2>
+    <p><b>Email us at info@travelSA.com</b></p>
+  </body>
+
+  <footer>
+
+  </footer>
+</html>

@@ -1,0 +1,56 @@
+<html>
+    <header>
+        <app-topnav class="topnav" *ngFor = "let page of pages" [page]="pages.page" [name]="page.name"></app-topnav>
+        <img src="./logo.jpg" width="200" height="80"/>
+    </header>
+
+    <body>
+        <h1>Book A Flight</h1>
+        <div class="container">
+            <label style="text-align: center" id="main_label"><b>To Where</b></label><br>
+            <hr>
+          <div class="form">
+            
+            
+            <label>Departure airport</label><br>
+            <select [(ngModel)]="d_airport">
+              <option>King Shaka International Airport</option>
+              <option>Cape Town International Airport</option>
+              <option>O.R. Tambo International Airport</option>
+            </select><br>
+            <label>Arrival airport</label><br>
+            <select [(ngModel)]="a_airport">
+              <option>King Shaka International Airport</option>
+              <option>Cape Town International Airport</option>
+              <option>O.R. Tambo International Airport</option>
+            </select><br>
+            <label>Departure Date</label><br>
+            <input type="date" [(ngModel)]="date"/><br>
+            <label>Flight Class</label><br>
+            <select style="width: 30%; height: 30px;" [(ngModel)]="class">
+              <option>Economy Class</option>
+              <option>Business Class</option>
+              <option>Fisrt class</option>
+            </select><br>
+        
+        
+        <label style="text-align: center" class="main_label">Passengers</label><br>
+        
+        
+            
+            <label>Adults</label><br>
+            <input type="number" [(ngModel)]="num_adults"/><br>
+            <label>Children</label><br>
+            <input type="number" [(ngModel)]="num_child"/><br>
+            <label>Infants</label><br>
+            <input type="number" [(ngModel)]="num_infants"/><br>
+            <input type="submit" (click)="book()"  value="Submit"/>
+        
+        </div>
+        </div>
+        <footer>
+            <app-footer></app-footer>
+        </footer>
+    </body>
+    
+</html>

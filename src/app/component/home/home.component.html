@@ -1,0 +1,60 @@
+<html>
+  <header>
+          <app-topnav class="topnav" *ngFor = "let page of pages" [page]="pages.page" [name]="page.name"></app-topnav>
+          <img src="./logo.jpg" width="200" height="80"/>
+  </header>
+  <body>
+      <h1 style="text-align: center">Travel South Africa</h1>
+    <div class="container">
+      
+      <p><b>Travel South Africa for less with Travel S.A</b></p>
+      <!--<router-outlet></router-outlet>-->
+      <div class="card">
+        <div class="c_time">
+            <div class="promo_time">
+              <h3><b style="text-align: center">Till when can I book?</b></h3> 
+              <p>19 June - 19 July 2018</p> 
+            </div>
+          </div>
+    
+          <div class="c_depart">
+              <div class="promo_depart">
+                <h3><b style="text-align: center">When can I depart?</b></h3> 
+                <h4 style="text-align: center">From Joburg</h4>
+                <p> <br> 
+                    •	4 - 6 Sept 2018 <br> 
+                    •	10-13 Sept 2018 <br> 
+                    •	17 - 19 Sept 2018<br> 
+                </p>
+                <h4 style="text-align: center">From Cape Town & Durban</h4>
+                <p>
+                     <br> 
+                    •	16 June - 8 Dec 2018 <br> 
+                    •	12 Jan – 11 Mar 2019 <br> 
+
+                </p> 
+              </div>
+          </div>
+
+          <div class="c_return">
+              <div class="promo_return">
+                <h3><b style="text-align: center">When can I return?</b></h3> 
+                <p>Maximum stay: 1 month</p> 
+              </div>
+          </div>
+      </div>
+    </div>
+    <!--<hr>
+    <div class="airport">
+      <h1 >Airport</h1>
+      <div class="card">
+        <img src="./Durban.jpg" width="200" height="80">
+      </div>
+
+    </div>-->
+  </body>
+  <footer>
+      <app-footer></app-footer>
+  </footer>
+</html>
+
